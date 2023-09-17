@@ -124,14 +124,17 @@ export const MembersModal = () => {
                       <DropdownMenuTrigger>
                         <MoreVertical className="h-4 w-4 text-zinc-500" />
                       </DropdownMenuTrigger>
-                      <DropdownMenuContent side="left">
+                      <DropdownMenuContent
+                        side="left"
+                        className="bg-white text-black"
+                      >
                         <DropdownMenuSub>
                           <DropdownMenuSubTrigger className="flex items-center">
                             <ShieldQuestion className="w-4 h-4 mr-2" />
                             <span>Role</span>
                           </DropdownMenuSubTrigger>
                           <DropdownMenuPortal>
-                            <DropdownMenuSubContent>
+                            <DropdownMenuSubContent className="bg-white text-black">
                               <DropdownMenuItem
                                 onClick={() => onRoleChange(member.id, 'GUEST')}
                               >
