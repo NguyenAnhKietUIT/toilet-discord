@@ -143,7 +143,7 @@ export const CreateChannelModal = () => {
                           <SelectValue placeholder="Select a channel type" />
                         </SelectTrigger>
                       </FormControl>
-                      <SelectContent>
+                      <SelectContent className="bg-white text-black">
                         {Object.values(ChannelType).map((type) => (
                           <SelectItem
                             key={type}

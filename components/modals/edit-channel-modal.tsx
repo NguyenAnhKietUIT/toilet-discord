@@ -141,7 +141,7 @@ export const EditChannelModal = () => {
                           <SelectValue placeholder="Select a channel type" />
                         </SelectTrigger>
                       </FormControl>
-                      <SelectContent>
+                      <SelectContent className="border-0 bg-white dark:text-black">
                         {Object.values(ChannelType).map((type) => (
                           <SelectItem
                             key={type}
