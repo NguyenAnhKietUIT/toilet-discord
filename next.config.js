@@ -10,8 +10,11 @@ const nextConfig = {
   },
   images: {
     domains: ['uploadthing.com', 'utfs.io'],
+    unoptimized: true,
   },
-  swcMinify: false,
+  swcMinify: true,
+  reactStrictMode: true,
+  output: 'export',
 };
 
 module.exports = nextConfig;

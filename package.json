@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "static": "next build && next export"
   },
   "dependencies": {
+    "@capacitor/android": "^5.4.0",
+    "@capacitor/core": "^5.4.0",
+    "@capacitor/ios": "^5.4.0",
     "@clerk/nextjs": "^4.23.5",
     "@emoji-mart/data": "^1.1.2",
     "@emoji-mart/react": "^1.1.1",
@@ -39,11 +43,11 @@
     "date-fns": "^2.30.0",
     "emoji-mart": "^5.5.2",
     "eslint": "8.48.0",
-    "eslint-config-next": "13.4.12",
+    "eslint-config-next": "13.4.19",
     "livekit-client": "^1.13.3",
     "livekit-server-sdk": "^1.2.6",
     "lucide-react": "^0.269.0",
-    "next": "13.4.12",
+    "next": "13.4.19",
     "next-themes": "^0.2.1",
     "postcss": "8.4.28",
     "query-string": "^8.1.0",
@@ -64,6 +68,7 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
+    "@capacitor/cli": "^5.4.0",
     "@types/uuid": "^9.0.3",
     "prisma": "^5.3.1"
   }
